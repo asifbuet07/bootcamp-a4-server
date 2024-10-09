@@ -5,6 +5,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 const books = require("./data/books-data.json");
+const privateBooks = require("./data/private-books-data.json");
 
 app.use(cors());
 
@@ -16,13 +17,22 @@ app.get("/api/books", (req, res) => {
   res.send(books);
 });
 
+app.get("/api/private-books", (req, res) => {
+  res.send(privateBooks);
+});
+
 app.get("/api/books/:id", (req, res) => {
   const bookId = parseInt(req.params.id, 10);
   const book = books.find((b) => b.bookId === bookId);
-
+  const privateBook = privateBooks.find((b) => b.bookId === bookId);
+ 
   if (book) {
     res.send(book);
-  } else {
+  }
+  else if (privateBook) {
+    res.send(privateBook);
+  }
+  else {
     res.status(404).send({ message: "Book not found" });
   }
 });

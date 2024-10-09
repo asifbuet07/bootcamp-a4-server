@@ -1,0 +1,41 @@
+[
+  {
+    "bookId": 7,
+    "bookName": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "image": "https://bookclubchat.com/wp-content/uploads/2019/03/Silent-Patient-Review-Book-Club-Chat.jpg",
+    "review": "A gripping psychological thriller that keeps you guessing until the very end.",
+    "totalPages": 336,
+    "rating": 4.4,
+    "category": "Thriller",
+    "tags": ["Suspense", "Psychological", "Mystery"],
+    "publisher": "Celadon Books",
+    "yearOfPublishing": 2019
+  },
+  {
+    "bookId": 8,
+    "bookName": "Dune",
+    "author": "Frank Herbert",
+    "image": "https://sm.ign.com/t/ign_za/lists/h/how-to-rea/how-to-read-the-dune-books-in-chronological-order_1jyy.1280.jpg",
+    "review": "A sci-fi classic that masterfully weaves together politics, religion, and ecology in a futuristic desert world.",
+    "totalPages": 412,
+    "rating": 4.8,
+    "category": "Science Fiction",
+    "tags": ["Space", "Adventure", "Epic"],
+    "publisher": "Chilton Books",
+    "yearOfPublishing": 1965
+  },
+  {
+    "bookId": 9,
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2021/07/book-The-Alchemist-book.jpg",
+    "review": "A timeless tale about following one's dreams and listening to the heart, filled with deep wisdom.",
+    "totalPages": 208,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": ["Spiritual", "Adventure", "Philosophical"],
+    "publisher": "HarperOne",
+    "yearOfPublishing": 1988
+  }
+]
