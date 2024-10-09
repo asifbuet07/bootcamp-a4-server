@@ -21,18 +21,16 @@ app.get("/api/private-books", (req, res) => {
   res.send(privateBooks);
 });
 
-app.get("/api/books/:id", (req, res) => {
+app.get("/api/book/:id", (req, res) => {
   const bookId = parseInt(req.params.id, 10);
   const book = books.find((b) => b.bookId === bookId);
   const privateBook = privateBooks.find((b) => b.bookId === bookId);
- 
+
   if (book) {
     res.send(book);
-  }
-  else if (privateBook) {
+  } else if (privateBook) {
     res.send(privateBook);
-  }
-  else {
+  } else {
     res.status(404).send({ message: "Book not found" });
   }
 });
